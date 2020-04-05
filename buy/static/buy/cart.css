@@ -1,0 +1,105 @@
+#wrapper{
+    background-color:rgba(177, 177, 177,0.2);
+}
+
+
+#nav-bar{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:90px;
+    background-color:rgb(241, 241, 241);
+    display:flex;
+    z-index:1;
+    justify-content:space-around;
+}
+#nav-content{
+    width:140px;
+    height:90px;
+    padding-top: 10px;
+    /* background-color: aliceblue; */
+}
+#header-image{
+    background-image:url(db.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:240px;
+    height:90px;
+}
+.icon{
+    font-size: 40px;
+    margin-top:15px;
+    color: rgb(165, 160, 160); 
+}
+.icon:hover{
+    color:rgb(53, 54, 54);
+    transition-duration: 0.5s;
+}
+.nav-link{
+    font-family:'Source Sans Pro';
+    text-align: center;
+    font-size: 18px;
+    font-weight:bold;
+    text-decoration: none;
+    color:rgb(64, 63, 102);
+    outline:none;
+}
+#nav-text:hover{
+    color:rgb(99, 137, 163);
+    transition-duration:0.2s;
+}
+#mainbody{
+    width:60%;
+    /* height:500px; */
+    margin:7% auto;
+    /* background-color:white; */
+    border-radius:10px;
+}
+#top_div{
+    width:100%;
+    /* height:500px; */
+    margin:7% auto;
+    background-color:white;
+    border-radius:10px;
+}
+#headtext{
+    font-family:'Source Sans Pro';
+    text-align: center;
+    font-size: 40px;
+    font-weight:bold;
+    color:rgb(64, 63, 102);
+    border-bottom: 5px solid rgb(64, 63, 102);;
+}
+#products{
+    width:100%;
+    display:flex;
+    margin-bottom: 20px;
+    flex-direction: row;
+    padding:20px 0;
+    background-color:white;
+    border-radius:10px;
+    justify-content: space-around;
+
+}
+#product-text{
+    font-family: "Source Sans Pro";   
+}
+#inner_product{
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+}
+#button{
+    margin: 0 auto;
+    text-align: center;
+    width:40%;
+    height:35px;
+    background-color: rgba(77, 118, 194,0.8);
+    font-family: "Source Sans Pro";
+    border-radius: 50px;
+}
+#button:hover{
+    box-shadow:1px 1px 10px 2px rgb(165, 163, 163), -1px 0 10px 2px rgb(165, 163, 163);
+    transition-duration:0.5s;
+    background-color: rgb(16, 146, 233);
+}

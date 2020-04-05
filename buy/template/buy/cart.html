@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'buy/cart.css' %}">
+    <link rel="icon" href="{% static 'buy/db_icon.png' %}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Doodhewale Bhaiya</title>
+
+</head>
+<body id="wrapper">
+    <header id="header">
+        <nav id="nav-bar">       
+            <div id="header-image">
+            <a href="{{username}}"></a>
+            </div>
+            
+            <div id="nav-content">
+                <a  class="nav-link" href=""><p>Welcome, {{username}}</p></a>
+            </div>
+            {% comment %} <div id="nav-content">
+                <a class="nav-link" href="{% url 'homepage_log' %}"><p>Products</p></a>
+            </div> {% endcomment %}
+            {% comment %} <div id="nav-content">
+                <a  class="nav-link" href="#contact"><p>About us</p></a>
+            </div> {% endcomment %}
+            <div id="nav-content">
+                <a  class="nav-link" href="{% url 'logout' %}"><p>Logout</p></a>
+            </div>
+
+            <div>
+                <a href=""><i class="fas fa-shopping-cart icon"></i></a>
+            </div>
+        </nav>
+    </header>
+         <main id="mainbody">
+            
+            <div id="top_div">
+                <h2 id="headtext">Your Cart<h2>
+            </div>
+            <div id="products">
+                <div><h3 style="font-size:30px;" id="product-text">Product</h3></div>
+                <div><h3 style="font-size:30px;" id="product-text">Amount</h3></div>
+            </div>
+            {% for l in list%}        
+            <div id="products">
+               
+                    <div id="inner_product"><h3 id="product-text">{{l.product_name}}</h3></div>
+                    <div id="inner_product"><h3 id="product-text">{{l.product_price}}</h3></div>
+                
+            </div>
+            {% endfor %}
+            <div id="products">
+                <div id="inner_product"><h3 id="product-text">Total Amount</h3></div>
+                <div id="inner_product"><b><h3 id="product-text">{{total}}</h3></b></div>
+            </div>
+
+           <div id="button">
+                <h3>Place Order</h3>
+            </div>
+        </main>
+
+</body>
+</html>

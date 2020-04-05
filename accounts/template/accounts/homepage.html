@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'accounts/landing.css' %}">
+    <link rel="icon" href="{% static 'accounts/db_icon.png' %}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Doodhewale Bhaiya</title>
+    <script>   
+        function preventBack(){window.history.forward();}
+        setTimeout("preventBack()", 0);
+        window.onunload=function(){null};   
+    </script>
+</head>
+<body id="wrapper">
+    <header id="header">
+        <nav id="nav-bar">       
+            <div id="header-image">
+            </div>
+            
+            <div id="nav-content">
+                <a  class="nav-link" href="{% url 'register' %}"><p>Sign-up</p></a>
+            </div>
+            <div id="nav-content">
+                <a  class="nav-link" href="{% url 'login' %}"><p>Sign-in</p></a>
+            </div>
+            <div id="nav-content">
+                <a class="nav-link" href="#products"><p>Products</p></a>
+            </div>
+            <div id="nav-content">
+                <a  class="nav-link" href="#contact"><p>About us</p></a>
+            </div>
+
+            <div>
+                <a href=""><i class="fas fa-shopping-cart icon"></i></a>
+            </div>
+        </nav>
+    </header>
+        <main id="mainbody">
+         <div id="top-div">
+            <h2 id="topdiv-text">Who is Doodhwale Bhaiya?</h2>
+            <p id="intro-text">Doodhwale Bhaiya is an Indian cooperative dairy company, based at Virar in the state of Maharashtra.
+                    It was eastablished in the year of 2000. Right now our aim is to reach every idividual of this nation.
+                    Our online platform gurantees of freshness and originality of product.</p>
+            </div>
+            
+           
+            <div id="products">
+                <h2 id="product-text">Products</h2>
+                <div id="inner-product">
+                    <div id="sub-inner">
+                        <div  id="product-image" style="background-image: url(https://twosleevers.com/wp-content/uploads/2017/06/Instant-Pot-Paneer-01.jpg)">
+                        </div>
+                        <h2 id="product-text-name">Fresh Paneer</h2>
+                        <h2 id="product-text-name" style="font-size: 25px;">$10/kg</h2>
+                            <div id="product-cart">
+                                <h2 id="cart-text">Add to cart</h2> 
+                             
+                            </div>
+                    </div>
+                    <div id="sub-inner">
+                        <div id="product-image" style="background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fimage%2Fgalleries%2F08%2F7ww-cheddar-mr-gallery-x.jpg%3Fitok%3D0MLIMTO8);">
+                        </div>
+                        <h2 id="product-text-name"> Cheese</h2>
+                        <h2 id="product-text-name" style="font-size: 25px;">$12/kg</h2>
+                        <div id="product-cart">
+                            <h2 id="cart-text">Add to cart</h2>
+                        </div>
+                    </div>
+                    <div id="sub-inner">
+                        <div id="product-image" style="background-image: url(https://www.whiskaffair.com/wp-content/uploads/2013/08/Masala-Chaas-3.jpg);">      
+                        </div>
+                        <h2 id="product-text-name">Buttermilk</h2>
+                        <h2 id="product-text-name" style="font-size: 25px;">$4/lit</h2>
+                        <div id="product-cart">
+                            <h2 id="cart-text">Add to cart</h2>           
+                        </div>
+                    </div>     
+                </div>
+                <div id="inner-product">
+                    <div id="sub-inner">
+                        <div  id="product-image" style="background-image: url(https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/321/321990/close-up-of-block-of-butter-being-sliced-may-raise-cholesterol.jpg?w=1155&h=1541)">
+                        </div>
+                        <h2 id="product-text-name">Fresh Paneer</h2>
+                        <h2 id="product-text-name" style="font-size: 25px;">$10/kg</h2>
+                            <div id="product-cart">
+                                <h2 id="cart-text">Add to cart</h2> 
+                             
+                            </div>
+                    </div>
+                    <div id="sub-inner">
+                        <div id="product-image" style="background-image: url(https://i2.wp.com/fullofplants.com/wp-content/uploads/2017/06/best-vegan-almond-milk-greek-yogurt-thumb3.jpg?fit=1400%2C1400&ssl=1);">
+                        </div>
+                        <h2 id="product-text-name"> Cheese</h2>
+                        <h2 id="product-text-name" style="font-size: 25px;">$12/kg</h2>
+                        <div id="product-cart">
+                            <h2 id="cart-text">Add to cart</h2>
+                        </div>
+                    </div>
+                    <div id="sub-inner">
+                        <div id="product-image" style="background-image: url(https://www.organictattva.com/wp-content/uploads/2018/07/Suji-Barfi.jpg);">      
+                        </div>
+                        <h2 id="product-text-name">Buttermilk</h2>
+                        <h2 id="product-text-name" style="font-size: 25px;">$4/lit</h2>
+                        <div id="product-cart">
+                            <h2 id="cart-text">Add to cart</h2>           
+                        </div>
+                    </div>     
+                </div>
+            </div>
+            <h2 id="contact">Contact</h2>
+            <div id="contact-box">
+                <h3 id="contact-text-head">Address : </h3>
+                <p id="contact-text">1197  Kelly Street</p><p id="contact-text">SUBIACO, AR Arkansas,72865</p>
+                <h3 id="contact-text-head">Contact no. : </h3>
+                <p id="contact-text">7894561237</p>
+            </div>    
+            
+        </main>
+         <footer id="footer">
+            <p id="intro-text" style="text-align: center;">By <b>Abhishek Dhule<b></p>
+                <div class="contact-box">
+                    <a href="https://www.linkedin.com/in/abhishek-dhule-b2b76717b/"><i class="fab fa-linkedin contact-icon"></i></a>
+                    <a href="https://www.instagram.com/abhidhule9137/"><i class="fab fa-instagram contact-icon"></i></a>
+                    <a href="https://www.facebook.com/abhishek.dhule.79"><i class="fab fa-facebook-f contact-icon"></i></a>
+                </div>
+        </footer>
+
+</body>
+</html>

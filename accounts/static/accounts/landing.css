@@ -1,0 +1,257 @@
+#wrapper{
+    background-color:rgba(177, 177, 177,0.2);
+}
+
+
+#nav-bar{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:90px;
+    background-color:rgb(241, 241, 241);
+    display:flex;
+    z-index:1;
+    justify-content:space-around;
+}
+#nav-content{
+    width:140px;
+    height:90px;
+    padding-top: 10px;
+    /* background-color: aliceblue; */
+}
+#header-image{
+    background-image:url(db.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:240px;
+    height:90px;
+}
+.icon{
+    font-size: 40px;
+    margin-top:15px;
+    color: rgb(165, 160, 160); 
+}
+.icon:hover{
+    color:rgb(53, 54, 54);
+    transition-duration: 0.5s;
+}
+.nav-link{
+    font-family:'Source Sans Pro';
+    text-align: center;
+    font-size: 18px;
+    font-weight:bold;
+    text-decoration: none;
+    color:rgb(64, 63, 102);
+    outline:none;
+}
+#nav-text:hover{
+    color:rgb(99, 137, 163);
+    transition-duration:0.5s;
+}
+#mainbody{
+    width:85%;
+    /* height:500px; */
+    margin:7% auto;
+    background-color:white;
+    border-radius:10px;
+}
+
+#top-div{
+    padding: 20px 4%;
+    /* width:100%; */
+    height:150px;
+    /* background-color: gray; */
+}
+#topdiv-text{
+    color:rgb(64, 63, 102);
+    font-family:"Source Sans Pro";
+    font-size: 40px;
+    border-bottom: 5px solid rgb(65, 131, 151);
+    max-width: 450px;
+}
+#intro-text{
+    color:rgb(64, 63, 102);
+    font-family:"Source Sans Pro";
+    font-size: 20px;
+}
+
+#products{
+    /* background-color: aqua; */
+    padding-top: 40px;
+    
+}
+#define-text{
+    margin-top: 20px;
+    margin-left:5%;
+    font-family:"Source Sans Pro";
+    font-size: 40px;
+    background-color:red;
+    margin-bottom: 0;
+    color:rgb(64, 63, 102);
+    border-bottom: 5px solid rgb(65, 131, 151);
+    max-width: 150px;
+}
+#product-text{
+    margin-top: 20px;
+    margin-left:4%;
+    font-family:"Source Sans Pro";
+    font-size: 40px;
+    /* background-color:red; */
+    margin-bottom: 0;
+    color:rgb(64, 63, 102);
+    border-bottom: 5px solid rgb(65, 131, 151);
+    max-width: 13%;
+}
+#product-text:hover{
+    color:rgb(99, 137, 163);
+    transition-duration:1s;
+}
+#inner-product{
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    /* background-color: aqua; */
+    padding:2% 0%;
+}
+#sub-inner{
+    width:27%;
+    height:vw;
+    background-color:rgba(177, 177, 177,0.2);
+    border-radius:8px;
+    padding:1% 1%;
+}
+#sub-inner:hover{
+    box-shadow:4px 4px 15px 2px rgb(165, 163, 163), -4px 0px 15px 2px rgb(165, 163, 163) ;
+    transition-duration:0.5s;
+}
+#product-image{
+    background-size: cover;
+    background-repeat:none;
+    width:100%;
+    height:18vw;
+    /* background-color: red; */
+    border-radius: 6px; 
+}
+.product-cart{
+    display:flex;
+    width:100%;
+    height:50px;
+    background-color: rgba(77, 118, 194,0.8);
+    border-radius:50px;
+    margin:2% 0;
+    margin-top: 9%;
+    padding-left: 2% auto;
+    font-family: "Source Sans Pro";
+    font-size :25px;
+}
+.cart-text{
+    font-family: "Source Sans Pro";
+    font-size :25px;
+    margin:2% auto;
+}
+#product-text-name{
+    font-family: "Source Sans Pro";
+    color:rgb(64, 63, 102);
+    font-size:30px;
+    margin: 4% 3%;
+}
+#product-cart:hover{
+    box-shadow:1px 1px 10px 2px rgb(165, 163, 163), -1px 0 10px 2px rgb(165, 163, 163);
+    transition-duration:0.5s;
+    background-color: rgb(16, 146, 233);
+    
+}
+#contact{
+    font-family:"Source Sans Pro";
+    font-size: 40px;
+    /* background-color:red; */
+    margin-bottom: 0;
+    margin-left: 4%;
+    color:rgb(64, 63, 102);
+    border-bottom: 5px solid rgb(65, 131, 151);
+    max-width: 140px;
+}
+#contact-box{
+    padding:1.5% 4%;
+}
+#contact-text-head{
+    font-family:"Source Sans Pro";
+    font-size: 25px; 
+    color:rgb(64, 63, 102);
+    margin-bottom: 0;
+}
+#contact-text{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-family:"Source Sans Pro";
+    font-size: 15px; 
+    color:rgb(64, 63, 102);
+}
+@media(max-width:930px){
+    #mainbody{
+        width:90%
+    }
+}       
+@media(max-width:750px){
+    #nav-bar{
+        flex-direction: column;
+        height:250px;
+        /* width: 80; */
+        justify-content: center;
+        /* background-color: aqua; */
+    }
+    #nav-content{
+
+        height:50px;
+        width: 100%;
+        text-align: center;
+        /* background-color: red; */
+    }
+    .nav-link{
+        padding: 0;
+        margin: 0;
+    }
+    p{
+        margin: 5px;
+    }
+    .icon{
+        display: none;
+        font-size: 0;
+    }
+    #header-image{
+        z-index: 1;
+    }
+    #mainbody{
+        margin-top: 170px;
+    }
+}  
+.submit{
+    margin-top: 20px;
+    font-size: 22px;
+    font-family:"Source Sans Pro";
+    width:100%;
+    height:45px;
+    border-radius: 50px;
+    border:none;
+    background-color: rgba(77, 118, 194,0.8);
+    outline:none;
+}  
+.submit:hover{
+    box-shadow:1px 1px 10px 2px rgb(165, 163, 163), -1px 0 10px 2px rgb(165, 163, 163);
+    transition-duration:0.5s;
+    background-color: rgb(16, 146, 233);
+} 
+.contact-box{
+    margin: 10px auto;
+    display:flex;
+    padding: 0 20%;
+    justify-content: space-evenly;
+}
+.contact-icon{
+    font-size: 40px;
+    color:rgba(77, 118, 194,1);
+}
+.contact-icon:hover{
+    color: rgb(16, 146, 233);
+}
+                                                                                                                                                                                                                              

@@ -1,0 +1,63 @@
+#wrapper{
+    background-color:rgba(177, 177, 177,0.2);
+}
+#icon{
+    margin: 0 auto;
+    width: 60%;
+    height:90px;
+    background-image: url(db.png);
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    background-size: 100% 100%;
+}
+
+#reg_box{
+    margin:100px auto;
+    padding: 10px 15px;
+    width:30%;
+    
+    background-color: rgb(182, 193, 204);
+    border-radius: 10px;
+    box-shadow: 3px 8px 20px 3px rgb(81, 80, 110), -3px 0px 20px 3px rgb(81, 80, 110);
+}
+#head_text{
+    font-family:'Source Sans Pro';
+    font-size:35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#text{
+    font-family:'Source Sans Pro';
+    margin-bottom: 5px;
+    display:inline;
+    /* background-color: red; */
+}
+p{
+    display:inline;
+}
+#element{
+    margin-top: 6px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    width:100%;
+    height:35px;
+    border:none;
+    border-radius: 10px;
+    outline:none;
+    /* background-color: red; */
+}
+#submit{
+    margin:20px 0 20px 0;
+    font-size: 20px;
+    color:white;
+    width:100%;
+    height:35px;
+    border:none;
+    border-radius: 10px;
+    outline:none;
+    background-color: rgb(11, 76, 218);
+}
+#submit:hover{
+    background-color: rgb(10, 132, 231);
+    transition-duration: 0.5s;
+}

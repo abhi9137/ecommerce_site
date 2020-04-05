@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'accounts/log_style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" href={% static 'accounts/db_icon.png' %}>
+    <title>Sign in</title>
+        <script>   
+        function preventBack(){window.history.forward();}
+        setTimeout("preventBack()", 0);
+        window.onunload=function(){null};   
+    </script>
+</head>
+<body id="wrapper">
+    <div id="reg_box">
+        
+        <!-- <div id="icon">
+        </div> -->
+        <h2 id="head_text">Sign in</h2>
+            <form action="" method="POST">{% csrf_token %}
+            <!-- {% comment %} Here action register means after submitting form it will call the url of name register {% endcomment %} -->
+            <h3 id="text">Username</h3>
+            {% for message in messages %}
+            <p style="color:blue">({{message}})<p>
+            {% endfor %}
+            <input id="element" type="text" name="username" placeholder="Username"><br>
+            <h3 id="text">Password</h3>
+            {% for message in messages %}
+            <p style="color:blue">({{message}})<p>
+            {% endfor %}
+            <input id="element" type="password" name="password" placeholder="Password"><br>
+            <input id="submit" type="submit" name="Rigister">
+            </form>
+            <a href="{% url 'homepage' %}"> < Back to homepage </a>
+        </div>
+
+</body>
+</html>
